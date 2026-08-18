@@ -8,7 +8,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/enrollments")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://calm-bush-01c7a2510.7.azurestaticapps.net"
+})
 public class EnrollmentController {
 
     private final EnrollmentService enrollmentService;
